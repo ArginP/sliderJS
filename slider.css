@@ -104,4 +104,22 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+/* На маленьких экранах показывается 1 слайд */
+.itc-slider-item {
+  flex: 0 0 100%;
+}
+
+/* На экранах от 768px - 2 слайда */
+@media (min-width: 768px) {
+  .itc-slider-item {
+    flex: 0 0 50%;
+  }
+}
+/* На экранах от 1200px - 3 слайда */
+@media (min-width: 1200px) {
+  .itc-slider-item {
+    flex: 0 0 33.33%;
+  }
+}
+
 /*# sourceMappingURL=slider.css.map */
